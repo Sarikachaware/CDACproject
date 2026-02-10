@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Assign Issue</title>
+</head>
+<body>
+<h2>Assign Issue to Staff</h2>
+
+<form th:action="@{/admin/assignIssue}" method="post">
+    Issue Id: <input type="text" name="issueId"/><br/>
+    Staff Id: <input type="text" name="staffId"/><br/>
+    <button type="submit">Assign</button>
+</form>
+
+</body>
+</html>

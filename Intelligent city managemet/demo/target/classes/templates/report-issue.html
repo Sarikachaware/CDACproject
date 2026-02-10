@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Report Issue</title>
+</head>
+<body>
+<h2>Report Issue</h2>
+
+<form th:action="@{/citizen/saveIssue}" method="post">
+    Title: <input type="text" name="title"/><br/>
+    Description: <textarea name="description"></textarea><br/>
+    Location: <input type="text" name="location"/><br/>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
